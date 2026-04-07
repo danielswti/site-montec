@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Paleta de Cores Montec Mococa */
+:root {
+  /* Cores principais da marca */
+  --montec-red: #E63946;
+  --montec-blue: #1D6FA5;
+  --montec-dark: #0D2C3D;
+  --montec-gray: #B8BFC4;
+  
+  /* Tema claro (padrão) */
+  --primary: oklch(0.50 0.12 230); /* Azul Corporativo #1D6FA5 */
+  --primary-foreground: oklch(1 0 0); /* Branco */
+  --sidebar-primary: oklch(0.50 0.12 230);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --chart-1: oklch(0.55 0.20 15); /* Vermelho */
+  --chart-2: oklch(0.50 0.12 230); /* Azul */
+  --chart-3: oklch(0.20 0.02 240); /* Cinza Escuro */
+  --chart-4: oklch(0.75 0.01 240); /* Cinza Claro */
+  --chart-5: oklch(0.40 0.12 230); /* Azul Escuro */
+  --radius: 0.5rem;
+  --background: oklch(0.96 0.002 240); /* Cinza claro #F5F5F5 */
+  --foreground: oklch(0.20 0.02 240); /* Cinza Escuro #0D2C3D */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.20 0.02 240);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.20 0.02 240);
+  --secondary: oklch(0.75 0.01 240); /* Cinza Claro */
+  --secondary-foreground: oklch(0.20 0.02 240);
+  --muted: oklch(0.95 0.005 240); /* Cinza muito claro */
+  --muted-foreground: oklch(0.50 0.01 240);
+  --accent: oklch(0.55 0.20 15); /* Vermelho #E63946 */
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.55 0.20 15); /* Vermelho */
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.85 0.005 240);
+  --input: oklch(0.85 0.005 240);
+  --ring: oklch(0.50 0.12 230);
+  --sidebar: oklch(0.98 0 0);
+  --sidebar-foreground: oklch(0.20 0.02 240);
+  --sidebar-accent: oklch(0.95 0.005 240);
+  --sidebar-accent-foreground: oklch(0.20 0.02 240);
+  --sidebar-border: oklch(0.85 0.005 240);
+  --sidebar-ring: oklch(0.50 0.12 230);
+}
+
+.dark {
+  --primary: oklch(0.55 0.12 230);
+  --primary-foreground: oklch(1 0 0);
+  --sidebar-primary: oklch(0.55 0.12 230);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --background: oklch(0.15 0.02 240); /* Cinza Escuro */
+  --foreground: oklch(0.95 0 0); /* Branco suave */
+  --card: oklch(0.20 0.02 240);
+  --card-foreground: oklch(0.95 0 0);
+  --popover: oklch(0.20 0.02 240);
+  --popover-foreground: oklch(0.95 0 0);
+  --secondary: oklch(0.30 0.02 240);
+  --secondary-foreground: oklch(0.95 0 0);
+  --muted: oklch(0.35 0.02 240);
+  --muted-foreground: oklch(0.75 0.01 240);
+  --accent: oklch(0.55 0.20 15);
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.60 0.20 15);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.55 0.12 230);
+  --chart-1: oklch(0.60 0.20 15);
+  --chart-2: oklch(0.55 0.12 230);
+  --chart-3: oklch(0.75 0.01 240);
+  --chart-4: oklch(0.50 0.01 240);
+  --chart-5: oklch(0.45 0.12 230);
+  --sidebar: oklch(0.20 0.02 240);
+  --sidebar-foreground: oklch(0.95 0 0);
+  --sidebar-accent: oklch(0.35 0.02 240);
+  --sidebar-accent-foreground: oklch(1 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.55 0.12 230);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl lg:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl lg:text-2xl;
+  }
+
+  h5 {
+    @apply text-lg lg:text-xl;
+  }
+
+  h6 {
+    @apply text-base lg:text-lg;
+  }
+
+  .subtitle {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-medium;
+  }
+
+  p {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-light;
+  }
+
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: oklch(0.95 0.005 240);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.50 0.12 230);
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.55 0.20 15);
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1400px;
+    }
+  }
+  
+  /* Parallax effect */
+  .parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  /* Stagger animation */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  
+  /* Hover lift effect */
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+}
+
+
+
+/* Animações adicionais para scroll */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-left {
+    animation: slideLeft 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-right {
+    animation: slideRight 0.8s ease-out forwards;
+  }
+  
+  .card-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .card-shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scroll Snapping */
+html.scroll-snap {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Para dispositivos móveis, usar proximity em vez de mandatory */
+@media (max-width: 768px) {
+  html.scroll-snap {
+    scroll-snap-type: y proximity;
+  }
+}
+
