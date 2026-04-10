@@ -44,7 +44,7 @@ export default function ConstrucaoMineracao() {
         title="Soluções para o Setor Pesado"
         slogan="Construção Civil e Mineração"
         description="Peças e conjuntos metálicos robustos para ambientes extremos."
-        image="/BANNERSOLUÇÃOCONSTRUÇÃOCIVILEMINEIRAÇÃO.jpg"
+        image="/solucoes-construcao-civil-hero-bg-v2.jpeg"
       />
 
 
@@ -127,7 +127,7 @@ export default function ConstrucaoMineracao() {
               </div>
               <div className="relative">
                 <img
-                  src="/BANNERSOLUÇÃOCONSTRUÇÃOCIVILEMINEIRAÇÃO.jpg"
+                  src="/solucoes-construcao-civil-img-sobre.jpg"
                   alt="Construção Civil e Mineração"
                   className="rounded-lg shadow-2xl hover-lift"
                 />

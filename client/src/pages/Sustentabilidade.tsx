@@ -87,7 +87,7 @@ export default function Sustentabilidade() {
         title="Sustentabilidade"
         slogan="Nosso Compromisso com o Futuro"
         description="Práticas sustentáveis para um impacto positivo no meio ambiente e na sociedade."
-        image="/worker-factory-banner.jpg"
+        image="/sustentabilidade-hero-bg.webp"
       />
 
       {/* Introdução */}

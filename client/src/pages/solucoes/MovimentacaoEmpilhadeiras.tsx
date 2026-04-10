@@ -44,7 +44,7 @@ export default function MovimentacaoEmpilhadeiras() {
         title="Soluções em Logística"
         slogan="Movimentação e Empilhadeiras"
         description="Componentes robustos para empilhadeiras e equipamentos de movimentação."
-        image="/Movimentaçãoeempilhadeiras.JPG"
+        image="/solucoes-movimentacao-hero-bg.webp"
       />
 
 
@@ -125,7 +125,7 @@ export default function MovimentacaoEmpilhadeiras() {
               </div>
               <div className="relative">
                 <img
-                  src="/Movimentaçãoeempilhadeiras.JPG"
+                  src="/solucoes-movimentacao-img-sobre.webp"
                   alt="Movimentação de Materiais"
                   className="rounded-lg shadow-2xl hover-lift"
                 />

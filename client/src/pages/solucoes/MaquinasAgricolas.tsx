@@ -44,7 +44,7 @@ export default function MaquinasAgricolas() {
         title="Soluções para o Agronegócio"
         slogan="Máquinas Agrícolas"
         description="Peças e subconjuntos metálicos de alta resistência para o campo."
-        image="/maquinas-agricolas.jpeg"
+        image="/solucoes-maquinas-agricolas-hero-bg.webp"
       />
 
 
@@ -103,7 +103,7 @@ export default function MaquinasAgricolas() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative">
                 <img
-                  src="/maquinas-agricolas.jpeg"
+                  src="/solucoes-maquinas-agricolas-img-sobre.webp"
                   alt="Máquinas Agrícolas"
                   className="rounded-lg shadow-2xl hover-lift"
                 />
