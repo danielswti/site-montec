@@ -32,7 +32,7 @@ export default function Home() {
       title: "Construção Civil e Mineração",
       description:
         "Soluções para construção civil e mineração com componentes de alta resistência.",
-      image: "/BANNERSOLUÇÃOCONSTRUÇÃOCIVILEMINEIRAÇÃO.jpg",
+      image: "/solucoes-construcao-civil-hero-bg-v2.jpeg",
       link: "/solucoes/construcao-mineracao",
     },
     {
@@ -40,7 +40,7 @@ export default function Home() {
       title: "Máquinas Agrícolas",
       description:
         "Fabricação de componentes e peças para máquinas e implementos agrícolas.",
-      image: "/maquinas-agricolas-nova.png",
+      image: "/solucoes-maquinas-agricolas-hero-bg.webp",
       link: "/solucoes/maquinas-agricolas",
     },
     {
@@ -48,7 +48,7 @@ export default function Home() {
       title: "Movimentação e Empilhadeiras",
       description:
         "Peças e estruturas para equipamentos de movimentação de materiais e empilhadeiras.",
-      image: "/Movimentaçãoeempilhadeiras.JPG",
+      image: "/solucoes-movimentacao-hero-bg.webp",
       link: "/solucoes/movimentacao-empilhadeiras",
     },
   ];
