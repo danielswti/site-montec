@@ -33,7 +33,7 @@ export default function HeroCarousel() {
   const slides: Slide[] = [
     {
       id: 1,
-      title: "32 anos de história",
+      title: "33 anos de história",
       slogan: "Excelência que atravessa gerações",
       description: "Desde 1993 entregando qualidade, segurança e confiança na fabricação metálica",
       ctaText: "Conheça Nossa História",

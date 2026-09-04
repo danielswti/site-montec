@@ -43,7 +43,7 @@ export default function NossaHistoria() {
     },
     {
       year: "2025",
-      title: "32 anos de história, inovação e confiança",
+      title: "33 anos de história, inovação e confiança",
       description:
         "A Montec celebra mais de três décadas de resiliência e sucesso, com foco em sustentabilidade, eficiência e tecnologia de ponta.",
     },
